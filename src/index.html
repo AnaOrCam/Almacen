@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Almacén central - ACME SL</h1>
+        
+        <div class="col">
+            <form id="newprod" class="border border-1 border-black p-2">
+                <h3>Nuevo producto</h3>
+                <label class="form-label" for="id">ID:</label><br><input type="text" id="id" class="form-control" pattern="^[A-Z]{3}-[0-9]{4}$" required><br>
+                <label class="form-label" for="name">Nombre:</label><br><input type="text" id="name" class="form-control" minlength="5" maxlength="25" required><br>
+                <label class="form-label" for="price">Precio:</label><br><input type="number" id="price" class="form-control" step="0.01" min="0.01" max="999.99" required><br>
+                <label name="uds" class="form-label" for="units">Unidades:</label><br><input type="number" id="units" min="0" max="100" class="form-control"><br>
+                <input type="submit" class="btn btn-primary" value="Añadir"></input>
+                <input type="reset" class="btn btn-secondary" value="Reset"></input>
+            </form>
+        </div>
+        
+
+        <div class="row">
+            <table class="table table-light table-striped table-hover" id="table">
+                <thead class="table-dark">
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Uds.</th>
+                    <th>Precio/u</th>
+                    <th>Importe</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="total">
+        </div>
+        <br>
+        <div id="messages">
+            <strong>MENSAJES:</strong>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>

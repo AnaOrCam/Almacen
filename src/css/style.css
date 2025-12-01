@@ -1,0 +1,41 @@
+
+.opciones{
+    visibility: hidden;
+}
+
+.table-hover tbody tr:hover .opciones{
+    visibility: visible;
+}
+
+div>button{
+    border: none;
+    background-color: transparent;
+    padding: 0%;
+    margin: 2px;
+}
+
+.red{
+    color: red;
+}
+
+.error{
+    margin-top: 7px;
+    color: red;
+    font-size: 18px;
+    background-color: #ffbfaa;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.close{
+    border: 2px solid black;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 900px;
+    background-color: white;
+}
+
+.redBorder{
+    border-color: red;
+}
